@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    max-width: 1640px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+nav ul li{
+    width: fit-content;
+}
+nav ul li:hover  svg path {
+    fill: #4c93b0 ;
+}
+
+.about-container{
+    background: url("../../public/images/backgroundAbout.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+.resume-container{
+    background: url("../../public/images/backgroundResume.jpg") no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.resume-banner{
+    background: url("../../public/images/resumeBanner.jpeg") no-repeat center center ;
+    background-size: cover;
+    height: 180px;
+    overflow: hidden;
+
+}
+.portfolio-container{
+    background: url("../../public/images/portfolioBackground.jpg") no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.contact-container{
+    background: url("../../public/images/contactBackground.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
